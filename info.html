@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lana Del Rey — Общая информация</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #F7EDE2;
+      color: #333;
+      font-family: "Georgia", serif;
+    }
+    header {
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-bottom: 1px solid #E0D8D0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 14px 0;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 6px;
+      transition: opacity 0.2s;
+    }
+    nav a.active::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 3px;
+      background: #C08081;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+    main {
+      flex: 1 0 auto;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      display: flex;
+      background: #FFFFFF;
+      border: 2px solid #C08081;
+      border-radius: 8px;
+      max-width: 800px;
+      width: 100%;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 40%;
+      height: auto;
+      object-fit: cover;
+      border-right: 2px solid #C08081;
+    }
+    .card .info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%;
+    }
+    .card .info h2 {
+      font-size: 1.8rem;
+      color: #8E5E5E;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .card .info p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #444;
+      text-align: justify;
+    }
+    footer {
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-top: 1px solid #E0D8D0;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="info.html" class="active">Общая информация</a>
+      <a href="history.html">История</a>
+      <a href="discography.html">Дискография</a>
+      <a href="filmography.html">Клипы</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="shop.html">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="img/members/lana.jpg" alt="Lana Del Rey" />
+      <div class="info">
+        <h2>Lana Del Rey</h2>
+        <p>
+          Родилась 21 июня 1985 года в Нью-Йорке как Элизабет «Лиззи» Грант. В подростковом возрасте увлеклась
+          написанием текстов и публиковала демозаписи в MySpace. Первый сольный проект «Lizzy Grant» вышел в 2005 году.
+          В 2011-м выпустила EP <em>Kill Kill</em> под именем Lana Del Rey, где появился вирусный хит «Video Games».
+          С тех пор она сотрудничает с известными продюсерами Rick Nowels, Dan Auerbach и Jack Antonoff. В 2012 году
+          вышел её дебютный альбом <em>Born to Die</em>, который мгновенно стал платиновым и поднялся на верхние строчки
+          чартов по всему миру. За свою карьеру Lana Del Rey выпустила семь студийных альбомов, сочетая в творчестве
+          кинематографическую эстетику, ретро-элементы и современные поп-эксперименты. Её суммарные продажи превышают
+          15 миллионов копий, а песни часто воспринимаются критиками как образцы «гламурной грусти» современной сцены.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © Авдеева Екатерина ЭЭП211-1.
+  </footer>
+</body>
+</html>

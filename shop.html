@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lana Del Rey — Заказать альбом</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #F7EDE2;
+      color: #333;
+      font-family: "Georgia", serif;
+    }
+    header {
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-bottom: 1px solid #E0D8D0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 14px 0;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 6px;
+      transition: opacity 0.2s;
+    }
+    nav a.active::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 3px;
+      background: #C08081;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+    main {
+      flex: 1 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #C08081;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .form-container {
+      display: flex;
+      justify-content: center;
+    }
+    .form-container iframe {
+      width: 80%;
+      max-width: 600px;
+      height: 700px;
+      border: none;
+      border: 2px solid #C08081;
+      border-radius: 8px;
+    }
+    footer {
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-top: 1px solid #E0D8D0;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="info.html">Общая информация</a>
+      <a href="history.html">История</a>
+      <a href="discography.html">Дискография</a>
+      <a href="filmography.html">Клипы</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="shop.html" class="active">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>ЗАКАЗАТЬ АЛЬБОМ</h2>
+    <div class="form-container">
+      <iframe
+        src="https://docs.google.com/forms/d/e/ВАШ_ID_ФОРМЫ_LANA/viewform?embedded=true"
+        title="Форма заказа">
+        Загрузка…
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    © Авдеева Екатерина ЭЭП211-1.
+  </footer>
+</body>
+</html>

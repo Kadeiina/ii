@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lana Del Rey — Контакты</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #F7EDE2;
+      color: #333;
+      font-family: "Georgia", serif;
+    }
+    header {
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-bottom: 1px solid #E0D8D0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 14px 0;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 6px;
+      transition: opacity 0.2s;
+    }
+    nav a.active::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 3px;
+      background: #C08081;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+    main {
+      flex: 1 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #C08081;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .links {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .links a {
+      color: #333;
+      text-decoration: none;
+      font-size: 1rem;
+      background: #FFFFFF;
+      padding: 8px 16px;
+      border: 1px solid #C08081;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .links a:hover {
+      background: #C08081;
+      color: #FFFFFF;
+    }
+    footer {
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-top: 1px solid #E0D8D0;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="info.html">Общая информация</a>
+      <a href="history.html">История</a>
+      <a href="discography.html">Дискография</a>
+      <a href="filmography.html">Клипы</a>
+      <a href="contacts.html" class="active">Контакты</a>
+      <a href="shop.html">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>КОНТАКТЫ</h2>
+    <div class="links">
+      <a href="https://www.lanadelrey.com" target="_blank">Официальный сайт</a>
+      <a href="https://www.instagram.com/lanadelrey" target="_blank">Instagram</a>
+      <a href="https://twitter.com/LanaDelRey" target="_blank">Twitter</a>
+      <a href="https://www.facebook.com/lanadelrey" target="_blank">Facebook</a>
+      <a href="mailto:info@lanadelrey.com">Email</a>
+    </div>
+  </main>
+
+  <footer>
+    © Авдеева Екатерина ЭЭП211-1.
+  </footer>
+</body>
+</html>

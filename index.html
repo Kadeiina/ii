@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lana Del Rey — Главная</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: "Georgia", serif;
+      color: #333;
+      background: #F7EDE2 url("img/background.jpg") center/cover no-repeat;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background: inherit;
+      filter: brightness(60%);
+      z-index: 0;
+    }
+    header {
+      position: relative;
+      z-index: 1;
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-bottom: 1px solid #E0D8D0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 14px 0;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 6px;
+      transition: opacity 0.2s;
+    }
+    nav a.active::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 3px;
+      background: #C08081;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+    main {
+      position: relative;
+      flex: 1 0 auto;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #C08081;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    main p {
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      background: rgba(255,255,255,0.8);
+      padding: 14px 20px;
+      border-radius: 8px;
+    }
+    footer {
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-top: 1px solid #E0D8D0;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 0.9rem;
+      color: #777;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="active">Главная</a>
+      <a href="info.html">Общая информация</a>
+      <a href="history.html">История</a>
+      <a href="discography.html">Дискография</a>
+      <a href="filmography.html">Клипы</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="shop.html">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>LANA DEL REY</h1>
+    <p>
+      Lana Del Rey — культовая американская певица, автор песен и продюсер, чьё меланхоличное, 
+      кинематографическое звучание и ретро-эстетика сделали её одной из самых влиятельных 
+      артисток XXI века.
+    </p>
+    <p>
+      Дебютировав в 2012 году с альбомом <em>Born to Die</em>, она создала уникальный образ 
+      «гламурной грусти», который продолжился в её последующих работах и музыкальных экспериментах.
+    </p>
+  </main>
+
+  <footer>
+    © Авдеева Екатерина ЭЭП211-1.
+  </footer>
+</body>
+</html>

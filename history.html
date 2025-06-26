@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lana Del Rey — История</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #F7EDE2;
+      color: #333;
+      font-family: "Georgia", serif;
+      line-height: 1.6;
+    }
+    header {
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-bottom: 1px solid #E0D8D0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 14px 0;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 6px;
+      transition: opacity 0.2s;
+    }
+    nav a.active::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 3px;
+      background: #C08081;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+    main {
+      flex: 1 0 auto;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #C08081;
+      text-align: center;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .entry {
+      margin-bottom: 24px;
+    }
+    .entry .date {
+      display: block;
+      font-weight: bold;
+      color: #C08081;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .entry p {
+      background: #FFFFFF;
+      padding: 14px 20px;
+      border-radius: 6px;
+      border-left: 4px solid #E0D8D0;
+      color: #444;
+    }
+    footer {
+      flex: 0 0 auto;
+      background: #FFFFFF;
+      border-top: 1px solid #E0D8D0;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="info.html">Общая информация</a>
+      <a href="history.html" class="active">История</a>
+      <a href="discography.html">Дискография</a>
+      <a href="filmography.html">Клипы</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="shop.html">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>ИСТОРИЯ</h2>
+
+    <div class="entry">
+      <span class="date">2005</span>
+      <p>
+        В подростковом возрасте под именем «Lizzy Grant» Элизабет Грант (будущая Lana Del Rey) 
+        начала выкладывать свои демозаписи на платформу MySpace. В том же году вышло первое 
+        неофициальное демо <em>Lana Del Ray A.K.A. Lizzy Grant</em>. 
+        Уже тогда она формировала свой образ «ретро-гаучо» и «ночной киномузыки».
+      </p>
+    </div>
+
+    <div class="entry">
+      <span class="date">2010</span>
+      <p>
+        После смены псевдонима на Lana Del Rey, она провела серию независимых 
+        концертов в Лос-Анджелесе и Нью-Йорке, записывая материал для неофициального 
+        сборника <em>Sirens</em>. В этот период Lana активно искала свой фирменный 
+        звук, экспериментируя с нео-нуарным барокко-попом.
+      </p>
+    </div>
+
+    <div class="entry">
+      <span class="date">2011</span>
+      <p>
+        Подписав контракт с 5 Points Records, Lana Del Rey выпустила мини-альбом 
+        <em>Kill Kill</em>. Главный сингл «Video Games» приобрёл вирусный статус, 
+        набрав миллионы просмотров на YouTube. Этот трек стал отправной точкой 
+        в карьере: мир впервые услышал её «мрачный кинематографический поп».
+      </p>
+    </div>
+
+    <div class="entry">
+      <span class="date">2012</span>
+      <p>
+        В январе Lana заключила контракт с Interscope и Polydor Records. В феврале 
+        вышел дебютный студийный альбом <em>Born to Die</em> (продюсеры Rick Nowels 
+        и Emile Haynie). Альбом мгновенно дебютировал в топ-3 Billboard 200 и возглавил 
+        чарты восьми стран. Хиты «Video Games», «Born to Die» и «Summertime Sadness» 
+        разошлись тиражом более 7 млн копий. Летний тур по Северной Америке, Европе 
+        и Азии прошёл при аншлагах.
+      </p>
+    </div>
+
+    <div class="entry">
+      <span class="date">2013–2014</span>
+      <p>
+        В марте 2013 года Lana Del Rey записала «Young and Beautiful» для саундтрека 
+        к фильму «Великий Гэтсби». Трек получил премию «Золотой глобус» за лучшую 
+        оригинальную песню. В июне 2014 года вышел второй альбом <em>Ultraviolence</em>, 
+        спродюсированный Dan Auerbach (The Black Keys). Альбом дебютировал на первом 
+        месте Billboard 200, а сингл «West Coast» попал в топ-10 чарта UK.
+      </p>
+    </div>
+
+    <div class="entry">
+      <span class="date">2015</span>
+      <p>
+        9 сентября вышел третий альбом <em>Honeymoon</em>, созданный вместе с Rick Nowels 
+        и Kieron Melling. Жанр сместился в сторону кинематографического попа с 
+        оркестровыми элементами. В поддержку альбома Lana отправилась в «Honeymoon Tour» 
+        по Европе и Северной Америке.
+      </p>
+    </div>
+
+    <div class="entry">
+      <span class="date">2017</span>
+      <p>
+        21 июля вышел альбом <em>Lust for Life</em>, соавторами и продюсерами которого 
+        стали Jack Antonoff, The Weeknd и Greg Kurstin. Сингл «Love» дебютировал в топ-10 
+        Billboard Hot 100. Альбом получил статус платинового в США и собрал очень высокие 
+        оценки критиков за «более светлую и расслабленную» атмосферу по сравнению с ранними работами.
+      </p>
+    </div>
+
+    <div class="entry">
+      <span class="date">2019</span>
+      <p>
+        30 августа Lana Del Rey выпустила пятый студийный альбом 
+        <em>Norman Fucking Rockwell!</em>, продюсером которого выступил Jack Antonoff. 
+        Альбом получил всеобщее признание как «главный релиз года» и возглавил чарты 
+        США, UK и Австралии. Сингл «Mariners Apartment Complex» стал гимном 
+        «ретро-попа», а «Doin’ Time» (кавер на Sublime) взлетел в чарты Alternative.
+      </p>
+    </div>
+
+    <div class="entry">
+      <span class="date">2021</span>
+      <p>
+        19 марта вышел шестой студийный альбом 
+        <em>Chemtrails over the Country Club</em>, совместно с Jack Antonoff и Drew Erickson. 
+        Альбом дебютировал в топ-3 Billboard 200, собрал премии в номинациях «Лучший 
+        альтернативный поп-альбом» и получил множество хвалебных рецензий за лирическую 
+        глубину и «ностальгию по Калифорнии 1950-х».
+      </p>
+    </div>
+
+    <div class="entry">
+      <span class="date">2023</span>
+      <p>
+        24 января вышел седьмой студийный альбом 
+        <em>Did You Know That There’s a Tunnel Under Ocean Blvd</em>, в основном 
+        созданный с продукцией Drew Erickson и Jack Antonoff. Альбом дебютировал на 
+        первом месте Billboard 200, получил несколько номинаций на Grammy и стал 
+        одним из самых автобиографичных релизов Ланы. Лана провела тур «LA to the Moon» 
+        по США и Европе, при этом Том Хиддлстон выступил в роли одного из 
+        почётных гостей шоу и оказал спонсорскую поддержку её концертам.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    © Авдеева Екатерина ЭЭП211-1.
+  </footer>
+</body>
+</html>
